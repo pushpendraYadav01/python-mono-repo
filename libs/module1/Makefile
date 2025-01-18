@@ -20,9 +20,13 @@ help:
 	@echo "  update-venv        Update virtual environment for all modules"
 	@echo "  install-apt        Install system-level apt packages (useful for WSL or Linux)"
 	@echo "  clean              Clean up all virtual environments and temporary files"
-	@echo "  lint               Run pylint on all modules"
-	@echo "  test               Run pytest on all modules"
 	@echo "  format             Run black to format all modules"
+	@echo "  flake8             Run flake8 linting for all modules"
+	@echo "  isort              Run isort for sorting imports"
+	@echo "  lint               Run pylint for all modules"
+	@echo "  pyright            Run pyright for type checking"
+	@echo "  test               Run pytest for all modules"
+	@echo "  test-all           Run all tests (format, flake8, isort, lint, pyright, pytest)"
 	@echo ""
 
 # Create virtual environment and install dependencies
@@ -78,6 +82,30 @@ clean:
 	@rm -rf *.pyc
 	@rm -rf __pycache__
 
+# Run black to format all modules
+.PHONY: format
+format:
+	@for module in $(MODULES); do \
+		echo "Running black for $$module..."; \
+		black $$module; \
+	done
+
+# Run flake8 for linting
+.PHONY: flake8
+flake8:
+	@for module in $(MODULES); do \
+		echo "Running flake8 for $$module..."; \
+		flake8 $$module; \
+	done
+
+# Run isort for sorting imports
+.PHONY: isort
+isort:
+	@for module in $(MODULES); do \
+		echo "Running isort for $$module..."; \
+		isort $$module; \
+	done
+
 # Run pylint for all modules
 .PHONY: lint
 lint:
@@ -86,15 +114,20 @@ lint:
 		pylint $$module; \
 	done
 
+# Run pyright for type checking
+.PHONY: pyright
+pyright:
+	@for module in $(MODULES); do \
+		echo "Running pyright for $$module..."; \
+		pyright $$module; \
+	done
+
 # Run pytest for all modules
 .PHONY: test
 test:
 	@PYTHONPATH=src pytest tests
 
-# Run black to format all modules
-.PHONY: format
-format:
-	@for module in $(MODULES); do \
-		echo "Running black for $$module..."; \
-		black $$module; \
-	done
+# Run all tests (black, flake8, isort, pylint, pyright, pytest)
+.PHONY: test-all
+test-all: format flake8 isort lint pyright test
+	@echo "All tests ran successfully!"

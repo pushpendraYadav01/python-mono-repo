@@ -1,28 +1,31 @@
 # Core Python Tools
-ipython            # Interactive Python shell
-jupyter             # Jupyter Notebook for interactive learning
+ipython==8.31.0            # Interactive Python shell for efficient Python programming and exploration
+jupyter==1.1.1             # Jupyter Notebook for interactive learning and data exploration
 
-# # Mathematics and Scientific Computing
-# numpy              # Numerical computing library
-# scipy              # Scientific computing library
-# sympy                # Symbolic mathematics library
+# Mathematics and Scientific Computing
+# numpy==2.2.1              # Numerical computing library for handling arrays and matrices
+# scipy==1.15.1              # Scientific computing library for optimization, integration, and more
+# sympy==1.13.3              # Symbolic mathematics library for algebraic computations
 
-# # Data Analysis and Visualization
-# pandas              # Data manipulation and analysis
-# matplotlib          # Basic plotting library
-# seaborn            # Statistical data visualization
-# plotly             # Interactive visualization library
+# Data Analysis and Visualization
+# pandas==2.2.3             # Data manipulation and analysis library, especially for structured data
+# matplotlib==3.10.0        # Basic plotting library for creating static, animated, and interactive visualizations
+# seaborn==0.13.2           # Statistical data visualization library built on matplotlib
+# plotly==5.24.1            # Interactive visualization library for creating web-based visualizations
 
 # Python Learning and Tutorials
-jupyterlab          # Enhanced interface for Jupyter Notebooks
-rich               # Pretty printing and visual debugging
-black              # Code formatter for learning clean coding
+jupyterlab==4.3.4           # Enhanced interface for Jupyter Notebooks, providing an interactive development environment
+rich==13.9.4                # Pretty printing and visual debugging to make terminal output more readable
+black==24.10.0              # Code formatter for maintaining consistent and clean Python code style
+pyright==1.1.392.post0      # Type checker for Python to ensure type safety and correctness
 
 # Useful Python Utilities
-tqdm               # Progress bars
-requests           # Simplified HTTP requests
-pytest              # Testing framework to write Python tests
+tqdm==4.67.1                # Progress bars for Python applications to show progress in loops
+requests==2.32.3            # Simplified HTTP requests library for interacting with web services
+pytest==8.3.4               # Testing framework for writing simple and scalable tests
+flake8==7.1.1               # Linting tool for checking Python code style and quality
+isort==5.13.2               # Python import sorter, automatically sorts imports according to PEP8
 
 # Extras for Learning
-pylint             # Linting for writing better Python code
-pyfiglet        # Fun ASCII art generator
+pylint==3.3.3               # Linting tool for checking Python code for errors and improving code quality
+pyfiglet==1.0.2             # Fun ASCII art generator for creating text-based artwork in the terminal

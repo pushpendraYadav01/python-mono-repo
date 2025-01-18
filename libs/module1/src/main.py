@@ -7,7 +7,7 @@ Functions:
 """
 
 
-## Function to add two numbers with docstring
+# Function to add two numbers with docstring
 def add(a, b):
     """
     This function adds two numbers
@@ -18,7 +18,7 @@ def add(a, b):
     return a + b
 
 
-## Function to subtract two numbers with docstring
+# Function to subtract two numbers with docstring
 def subtract(a, b):
     """
     This function subtracts two numbers
@@ -29,6 +29,6 @@ def subtract(a, b):
     return a - b
 
 
-## Calling the functions
+# Calling the functions
 print(add(10, 20))
 print(subtract(20, 10))

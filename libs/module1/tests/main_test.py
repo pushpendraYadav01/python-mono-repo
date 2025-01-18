@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.main import add, subtract
 
-## Test cases for add and subtract functions
+# Test cases for add and subtract functions
 import unittest
 from src.main import add, subtract
 
