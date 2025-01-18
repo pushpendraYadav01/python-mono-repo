@@ -1,0 +1,23 @@
+## module1
+module1/venv/
+module1/__pycache__/
+module1/.pytest_cache/
+
+## module2
+module2/venv/
+module2/__pycache__/
+module2/.pytest_cache/
+
+## global
+__pycache__/
+.venv/
+.vscode/
+.idea/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.cache
+*.bak
+*.swp
+*.tmp

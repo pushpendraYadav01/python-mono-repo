@@ -1,0 +1,28 @@
+# Core Python Tools
+ipython            # Interactive Python shell
+jupyter             # Jupyter Notebook for interactive learning
+
+# Mathematics and Scientific Computing
+numpy              # Numerical computing library
+scipy              # Scientific computing library
+sympy                # Symbolic mathematics library
+
+# Data Analysis and Visualization
+pandas              # Data manipulation and analysis
+matplotlib          # Basic plotting library
+seaborn            # Statistical data visualization
+plotly             # Interactive visualization library
+
+# Python Learning and Tutorials
+jupyterlab          # Enhanced interface for Jupyter Notebooks
+rich               # Pretty printing and visual debugging
+black              # Code formatter for learning clean coding
+
+# Useful Python Utilities
+tqdm               # Progress bars
+requests           # Simplified HTTP requests
+pytest              # Testing framework to write Python tests
+
+# Extras for Learning
+pylint             # Linting for writing better Python code
+pyfiglet        # Fun ASCII art generator

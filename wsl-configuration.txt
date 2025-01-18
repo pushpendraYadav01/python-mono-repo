@@ -1,0 +1,10 @@
+1. Switch to WSL (Windows Subsystem for Linux)
+$ wsl --install
+
+2. Restart System
+
+3. Uninstall WSL Distributions
+$ wsl --list --verbose
+$ wsl --unregister <DistributionName>
+$ dism.exe /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart
+$ dism.exe /online /disable-feature /featurename:VirtualMachinePlatform /norestart
